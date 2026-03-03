@@ -73,6 +73,10 @@
         .btn-post { display: inline-block; margin-top: 15px; color: #00dfd8; text-decoration: none; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
         .btn-post:hover { text-decoration: underline; }
 
+        .tools-row { display: flex; gap: 15px; margin-top: 15px; color: var(--text-dim); font-size: 1.2rem; }
+        .tools-row i { transition: var(--transition); }
+        .tools-row i:hover { color: #00dfd8; transform: scale(1.2); }
+
         #modal { display: none; position: fixed; z-index: 2000; inset: 0; background: rgba(0,0,0,0.9); padding: 40px; justify-content: center; align-items: center; cursor: zoom-out; }
         #modal img { max-width: 100%; max-height: 100%; border-radius: 8px; }
 
@@ -147,6 +151,28 @@
         <section id="projects">
             <h2 style="margin-bottom: 30px;">PROJECTS</h2>
 
+            <div class="project-card" style="border-left-color: #00dfd8;">
+                <span class="tag">Business Intelligence | Apple</span>
+                <h3>Apple Global Sales Analysis</h3>
+                <div class="gallery-grid" style="grid-template-columns: 1fr; max-width: 600px;">
+                    <div class="gallery-item" style="height: 350px;" onclick="openModal('regional retail sales dashboard.png')">
+                        <div class="gallery-label">Regional Retail Sales Dashboard</div>
+                        <img src="regional retail sales dashboard.png">
+                    </div>
+                </div>
+                <div class="writeup-box" style="border-left-color: #00dfd8;">
+                    <strong>Predictive & Sales Analysis:</strong><br><br>
+                    This project involves a comprehensive analysis of Apple's global sales performance, utilizing data to identify trends and predict future revenue streams. 
+                    <br><br>
+                    Key focuses included regional performance tracking, product category growth, and using historical data to build a predictive outlook for upcoming quarters.
+                    <div class="tools-row">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fas fa-file-excel" title="Excel"></i>
+                    </div>
+                    <a href="https://github.com/ugonnaaa/Apple-Global-Sales-Analysis-Python-Excel-Dashboard" class="btn-post" target="_blank" style="color: #00dfd8;">View Project on GitHub →</a>
+                </div>
+            </div>
+
             <div class="project-card">
                 <span class="tag">Arsenal | Defensive Analysis and Dashboard</span>
                 <h3>2025/2026 1st Half Season Defensive Review</h3>
@@ -183,13 +209,16 @@
                         <li>273 Tackles (58.2% success rate) & 679 Ball Recoveries</li>
                         <li>Elite Discipline: 0 Penalties Conceded, 0 Own Goals, 0 Red Cards</li>
                     </ul>
+                    <div class="tools-row">
+                        <i class="fas fa-file-excel" title="Excel"></i>
+                    </div>
                     <a href="https://www.linkedin.com/posts/malachy-emebo-a92b3628b_arsenalfc-dataanalytics-datavisualization-ugcPost-7415819269067939841-Pt9i" class="btn-post" target="_blank">View Full Post on LinkedIn →</a>
                 </div>
             </div>
 
             <div class="project-card" style="border-left-color: #ff0080;">
                 <span class="tag">Chelsea | Attacking Analysis and Dashboard</span>
-                <h3>1st Half Season Attacking Output</h3>
+                <h3>2025/2026 1st Half Season Attacking Output</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item" onclick="openModal('sc 1.png')">
                         <div class="gallery-label">Overall Performance</div>
@@ -213,7 +242,9 @@
                     Diving into Chelsea's Attack: A Premier League Pre-Christmas Data Story. 
                     <br><br>
                     As a lifelong Chelsea supporter and data analyst, I wanted to understand how Chelsea’s attack has shaped up through the first half of the season. Built this dashboard in Excel, and honestly, the numbers tell quite a story.
-                    <br>
+                    <div class="tools-row">
+                        <i class="fas fa-file-excel" title="Excel"></i>
+                    </div>
                     <a href="https://www.linkedin.com/posts/malachy-emebo-a92b3628b_chelseafc-dataanalytics-datavisualization-activity-7409604267034038272-FMCi" class="btn-post" target="_blank" style="color: #ff0080;">View Full Post on LinkedIn →</a>
                 </div>
             </div>
